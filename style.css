@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-borda: hsl(321, 100%, 78%);
+    --cor-botao-main: hsl(322, 100%, 66%);
+    --cor-botao-header: #ffffff;
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Very-Dark-Cyan);
+}
+
+.navegacao {
+    margin: 0px, 20px, 0, 20px;
+}
+
+.navegacao_nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 6% 0%;
+}
+
+.navegacao_link_log {
+    width: 70%;
+    object-fit: cover;
+}
+
+.navegacao_botao {
+    border: 2px solid var(--cor-borda);
+    color: var(--cor-borda);
+    background-color: var(--cor-botao-header);
+    border-radius: 30px;
+    width: 8%;
+}
+
+
+.conteudo-um {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.conteudo_um_conteudo_titulo {
+        
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.conteudo_um_conteudo_texto {
+    width: 45%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.conteudo_conteudo_um_botao {
+    height: 80px;
+    width: 30%;
+    border-radius: 60px;
+    padding: 2% 2%, 2%, 2%;
+    border: 2px solid var(--cor-botao-main);
+    background-color: var(--cor-botao-main);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 6px 6px -6px #777;
+}
+
+.conteudo_conteudo_um_imagem_mockup {
+    padding-top: 30px;
+    width:80%;
+}
+
+.conteudo_dois {
+    padding: 10% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo_dois_titulo {
+    font-size: 3rem;
+    color: var(--Very-Dark-Cyan);
+
+}
+
+.conteudo_dois_conteudo {
+    text-align: center;
+    color: darkgrey;
+    font-size: 1.5rem;
+}
+
+.conteudo_informativo {
+    padding: 60px 0px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    
+
+.bg-info {
+    background-color: var(--Very-Pale-Blue);
+}
+
+.bg-top {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.bg-bottom {
+    width: 100%;
+}
+
+.conteudo_informativo_titulo {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.conteudo_informativo_info {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 50%;
+}
+
+.conteudo_informativo_texto {
+    font-size: 1.7rem;
+    width: auto;
+    text-align: left;
+}
+
+.conteudo_informativo_imagem {
+    width: 30%;
+}
+
+.container-footer {
+    margin-top: 10%;
+    height: 400px;
+}
+
+.conteudo-footer {
+    background-color: var(--Very-Dark-Cyan);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.conteudo_footer_texto {
+    width: 350px;
+    font-size: 1.5rem;
+    
+}
+.icons{
+    width:350px;
+}
+
+.icon {
+    font-size: 1rem;
+    margin: 0px 10px 0px;
+}
+
+.conteudo_footer_um {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+    gap: 30px;
+}
+
+.conteudo_footer_dois {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 50%;
+    gap: 40px;
+}
+
+.conteudo_footer_form {
+    width: 100%;
+    height: 40%;
+}
+
+.conteudo_footer_form_input {
+    width: 60%;
+    height: 50%;
+    border-radius: 5px;
+    border: none;
+}
+.conteudo_dois_titulo{
+    font-size:3rem;
+    
+}
+.conteudo_footer_form_buttom {
+    width: 30%;
+    height: 50%;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-botao-main);
+}
+
+.conteudo_footer_dois_texto {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1200px){
+    .navegacao_nav{
+        width: 100%;
+        padding:5% 0 0 5%;
+        margin:auto;
+    }
+
+    .navegacao_link_log{
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .navegacao_botao{
+        width: 30%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .conteudo-um{
+        padding:5%;
+    }
+
+    .conteudo_um_conteudo_titulo{
+        font-size:1.9rem;
+        padding-top: 10%;
+        text-align: center; 
+    }
+
+    .conteudo_dois{
+        flex-direction: column;
+        gap:100px;
+    }
+
+    .conteudo_um_conteudo_texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo_conteudo_um_botao{
+        width:80%;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .conteudo_dois_informativo{
+        font-size: 1.5rem;
+    }
+
+    .conteudo_dois_titulo{
+        text-align:center ;
+    }
+
+   .conteudo_dois_conteudo{
+        font-size:1rem;
+   }
+
+   .conteudo_informativo{
+        flex-direction: column;
+        width: auto; 
+   }
+
+   .conteudo_informativo_info{
+        width: 100%;
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+   }
+
+   .conteudo_informativo_reverso{
+        display: flex;
+        flex-direction: column-reverse;
+       
+   }
+   .conteudo_informativo_titulo{
+        font-size: 1.5rem;
+    
+   }
+   .conteudo_informativo_texto{
+        width:auto;
+        font-size: 0.9rem;    
+   }
+   .conteudo_informativo_imagem{
+        width:50%;
+   }
+   .conteudo-footer{
+        height: 100vh;
+        flex-direction: column-reverse;
+       
+        
+   }
+   .conteudo_footer_um{
+    width: auto;
+    height: 50%;
+    gap:0;
+   }
+
+   .conteudo_footer_form{
+    width: 100%;
+   }
+   .conteudo_footer_form_input{
+    width: 100%;
+   }
+   .conteudo_footer_form_buttom{
+    width: 50%;
+    margin: 5% 0 0 50%;
+   
+   }
+   .conteudo_footer_texto{
+    width: auto;
+    font-size: 1rem;
+   }
+   .conteudo_footer_dois{
+    width:auto;
+    height: 50%;
+    gap:5%;
+   }
+   .conteudo_footer_dois_texto{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font: 40px;
+    width: auto;
+    line-height: 25px;
+    }
+   
+}
